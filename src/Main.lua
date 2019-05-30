@@ -42,6 +42,10 @@ function SFC.Initialize(event, addonName)
     if GetUnitClassId("player") ~= 1 then
         SFC:Trace(1, "Non-dragonknight class detected, aborting addon initialization.")
         EM:UnregisterForEvent(SFC.name, EVENT_ADD_ON_LOADED)
+
+        -- Hide XML control
+        SFC_BuffDurationAnimation:SetHidden(true)
+
         return
     end
 
