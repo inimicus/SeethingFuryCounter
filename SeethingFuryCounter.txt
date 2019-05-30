@@ -2,7 +2,7 @@
 ## APIVersion: 100027
 ## SavedVariables: SeethingFuryCounterVariables
 ## Description: Displays stacks of Seething Fury
-## Version: 0.0.3
+## Version: 0.0.4
 ## Author: |cFFCCCC@g4rr3t|r (NA)
 ## OptionalDependsOn:  LibAddonMenu-2.0
 

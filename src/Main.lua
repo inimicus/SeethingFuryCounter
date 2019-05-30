@@ -9,7 +9,7 @@
 -- -----------------------------------------------------------------------------
 SFC             = {}
 SFC.name        = "SeethingFuryCounter"
-SFC.version     = "0.0.3"
+SFC.version     = "0.0.4"
 SFC.dbVersion   = 1
 SFC.slash       = "/sfc"
 SFC.prefix      = "[SFC] "
