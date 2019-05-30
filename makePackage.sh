@@ -7,7 +7,7 @@ addon=${PWD##*/}
 outDir="${addon}/release/"
 
 # Get version number
-version=`cat SeethingFuryCounter.txt | grep "## Version" | sed 's/.*: //'`
+version=`cat ${addon}.txt | grep "## Version" | sed 's/.*: //'`
 
 # Setup zip file name
 zipName="${addon}-${version/ /_}.zip"

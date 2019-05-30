@@ -5,52 +5,35 @@
 --
 -- Defaults.lua
 -- -----------------------------------------------------------------------------
+--
+SFC.Defaults = {}
 
 local defaults = {
     debugMode = 0,
-    showEmptyStacks = true,
-    selectedTexture = 8,
-    positionLeft = 800,
-    positionTop = 600,
-    size = 100,
+    positionLeft = 400,
+    positionTop = 400,
     unlocked = true,
-    lockedToReticle = false,
-    overlay = {
-        default   = false,
-        inactive  = false,
-        four      = false,
-        proc      = false,
+    showFrame = false,
+    count = {
+        r = 1,
+        g = 1,
+        b = 1,
+        a = 1,
     },
-    colors = {
-        default = {
-            r = 1,
-            g = 1,
-            b = 1,
-            a = 1,
-        },
-        inactive = {
-            r = 1,
-            g = 1,
-            b = 1,
-            a = 1,
-        },
-        four = {
-            r = 1,
-            g = 1,
-            b = 1,
-            a = 1,
-        },
-        proc = {
-            r = 1,
-            g = 1,
-            b = 1,
-            a = 1,
-        },
+    animation = {
+        r = 0.878,
+        g = 0.639,
+        b = 0.196,
+        a = 1,
     },
-    fadeInactive = false,
-    fadeAmount = 90,
+    frame = {
+        r = 0,
+        g = 0,
+        b = 0,
+        a = 0.5,
+    },
 }
 
-function SFC:GetDefaults()
+function SFC.Defaults.Get()
     return defaults
 end
